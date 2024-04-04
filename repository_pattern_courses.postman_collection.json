@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "6605145c-8526-4780-bbfe-f9c01c92072f",
+		"name": "repository_pattern_courses",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33605737"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8081/courses",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Arquitectura de Software\",\r\n    \"description\": \"Clase para aprender sobre diseño y arquitectura.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/courses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/courses/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"courses",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
